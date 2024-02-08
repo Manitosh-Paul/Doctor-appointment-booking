@@ -5,7 +5,7 @@ Executed and fine-tuned operations for the management of user data, improving th
 Enhanced web page security by implementing access controls to prevent direct unauthorized access, ensuring proper error handling for non-admin users.
 
 Live website:
-NOTE: YOU NEED NOT TO WORRY IF IT SAYS SITE IS NOT SECURE. IT IS HOSTED ON A FREE HOSTING PROVIDER INFINITYFREE.COM AND IT DOES PROVIDE IT'S FREE USERS AN SSL CERTIFICATE 
+NOTE: YOU NEED NOT TO WORRY IF IT SAYS SITE IS NOT SECURE. IT IS HOSTED ON A FREE HOSTING PROVIDER INFINITYFREE.COM AND IT DOES NOT PROVIDE IT'S FREE USERS AN SSL CERTIFICATE 
 SO, GO TO THE SITE AND ENJOY. 
 http://max24x7.infinityfreeapp.com/
 
