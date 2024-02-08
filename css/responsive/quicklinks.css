@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+
+    .quick_contact .quickphone,
+    .quickmail {
+        display: none;
+    }
+}

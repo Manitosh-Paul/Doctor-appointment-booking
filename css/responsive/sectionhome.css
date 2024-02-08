@@ -1,0 +1,111 @@
+@media(max-width:1199px) {
+    .section_home .texthome h2 {
+        font-size: 3rem;
+    }
+
+    .section_home .texthome p {
+        line-height: 2.3rem;
+        font-size: 1.5rem;
+    }
+
+    .section_home .imagehome .graph {
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media(max-width:915px) {
+    .section_home .texthome h2 {
+        font-size: 2rem;
+    }
+
+    .section_home .texthome p {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .section_home .texthome .emergency {
+        font-size: 1.5rem;
+    }
+
+    .section_home .imagehome .homedoctors {
+        height: 80%;
+    }
+
+    .section_home .imagehome .graph {
+        height: 80%;
+    }
+}
+
+@media(max-width:676px) {
+    .section_home {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .section_home .polygon {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+        border-radius: 3rem;
+    }
+
+    .section_home .texthome {
+        width: 100%;
+        height: 50%;
+    }
+
+    .section_home .imagehome {
+        width: 100%;
+        height: 50%;
+    }
+
+    .section_home .texthome h2 {
+        font-size: 1.8rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .section_home .texthome p {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .section_home .texthome .emergency {
+        font-size: 1.3rem;
+    }
+
+    .section_home .imagehome .homedoctors {
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media(max-width:656px) {
+
+    .section_home .texthome h2 {
+        font-size: 1.6rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .section_home .texthome p {
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .navbar .open_close_btn i {
+        font-size: 1.7rem;
+        padding: 1rem;
+        border: 2px solid var(--secondary);
+    }
+
+}
+
+@media(max-width:321px) {
+    .section_home .polygon {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+        border-radius: 2.5rem;
+    }
+
+    .navbar .open_close_btn i {
+        font-size: 1.5rem;
+    }
+
+}

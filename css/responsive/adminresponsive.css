@@ -1,0 +1,152 @@
+@media(max-width: 1548px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1194px) {
+    header .logo img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .section_datacontainer .admin_name_container h2 {
+        font-size: 1.5rem;
+    }
+
+    .section_datacontainer .img_container {
+        width: 37%;
+    }
+
+    .section_datacontainer .table_container .table .table-content th,
+    .table-content td {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width: 1016px) {
+    .section_datacontainer {
+        height: 150vh;
+        flex-direction: column;
+    }
+
+    .section_datacontainer :nth-child(2) {
+        order: 2;
+    }
+
+    .section_datacontainer .img_container {
+        width: 100%;
+        height: 70vh;
+        border-top-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        border-bottom-right-radius: 0;
+    }
+
+    .section_datacontainer .img_container img {
+        border-top-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        border-bottom-right-radius: 0;
+    }
+
+    .section_datacontainer .table_container {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .section_datacontainer .table_container .table {
+        width: 85%;
+    }
+
+}
+
+
+@media(max-width: 575px) {
+
+    .section_datacontainer {
+        height: 130vh;
+        flex-direction: column;
+    }
+
+    .section_datacontainer .admin_name_container h2 {
+        font-size: 1.4rem;
+    }
+
+    .section_datacontainer .img_container {
+        height: 50vh;
+    }
+
+    .section_datacontainer .table_container .table .table-content th,
+    .table-content td {
+        font-size: 1.3rem;
+    }
+
+    .section_datacontainer .table_container .table .table_caption h2 {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(max-width: 986px) {
+    header .logo img {
+        width: 60%;
+        height: 100%;
+    }
+
+}
+
+@media(max-width: 619px) {
+    header .logo img {
+        width: 80%;
+        height: 100%;
+    }
+
+}
+
+@media(max-width: 425px) {
+    nav ul li .nav_links {
+        font-size: 1.4rem;
+    }
+
+    nav ul li .logout i,
+    p {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+
+@media(max-width: 375px) {
+
+    .section_datacontainer {
+        height: 120vh;
+        flex-direction: column;
+    }
+
+    header .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header .open_close_btn i {
+        font-size: 1.5rem;
+    }
+
+    .section_datacontainer .admin_name_container h2 {
+        font-size: 1.2rem;
+    }
+
+    .section_datacontainer .table_container .table .table-content th,
+    .table-content td {
+        font-size: 1.2rem;
+    }
+
+    .section_datacontainer .table_container .table .table_caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .section_datacontainer .img_container {
+        height: 40vh;
+    }
+}

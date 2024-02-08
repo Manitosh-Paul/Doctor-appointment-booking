@@ -1,0 +1,115 @@
+@media(max-width: 64em) {
+    .section_features .features_container {
+        width: 90%;
+    }
+}
+
+@media(max-width: 44em) {
+    .section_features {
+        height: 30vh;
+    }
+
+    .section_features .features_container {
+        width: 38rem;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+
+    .section_features .features_container::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .section_features .features_container .featuresdiv {
+        min-width: 38rem;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        position: relative;
+        animation: features_slide 10s linear 2s infinite forwards;
+    }
+
+    @keyframes features_slide {
+
+        0% {
+            left: 0%;
+        }
+
+        10% {
+            left: 0%;
+        }
+
+        20% {
+            left: -100%;
+        }
+
+        40% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        60% {
+            left: -200%;
+        }
+
+        70% {
+            left: -100%;
+        }
+
+        80% {
+            left: -100%;
+        }
+
+        90% {
+            left: 0%;
+        }
+
+        100% {
+            left: 0%;
+        }
+    }
+}
+
+@media(max-width: 24.25em) {
+    .section_features .features_container {
+        width: 30rem;
+    }
+
+    .section_features .features_container .featuresdiv {
+        min-width: 30rem;
+    }
+
+    .section_features .features_container .featuresdiv i {
+        font-size: 3.7rem;
+        padding: 1.8rem;
+    }
+
+    .section_features .features_container .featuresdiv h3 {
+        font-size: 1.3rem;
+        padding-top: 0.8rem;
+        margin-top: 0.8rem;
+    }
+}
+
+@media(max-width: 20em) {
+    .section_features .features_container {
+        width: 27rem;
+    }
+
+    .section_features .features_container .featuresdiv {
+        min-width: 27rem;
+    }
+
+    .section_features .features_container .featuresdiv i {
+        font-size: 3.5rem;
+        padding: 1.5rem;
+    }
+
+    .section_features .features_container .featuresdiv h3 {
+        font-size: 1.2rem;
+        padding-top: 0.7rem;
+        margin-top: 0.7rem;
+    }
+}

@@ -1,0 +1,481 @@
+/* universal styling */
+
+:root {
+    --primary: #e9f5ff;
+    --secondary: #07549c;
+    --button: #7fc3f5;
+    --text: #0984e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+/* body {
+    overflow-x: hidden;
+} */
+
+.container {
+    max-width: 1540px;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* scroll bar design */
+
+html::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-.illusion_update {
+    display: none;
+}
+
+/* scroll bar design ends*/
+
+.p-top {
+    padding-top: 10vh;
+}
+
+.p-left {
+    padding-left: 10%;
+}
+
+.p-right {
+    padding-right: 5%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.message {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 99999;
+    position: fixed;
+    width: 30%;
+    height: 20%;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 2px solid var(--text);
+    transition: all 0.2s linear;
+    /* opacity: 0;
+    visibility: hidden;
+    pointer-events: none; */
+}
+
+.message p {
+    color: var(--primary);
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.btns_container {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns_container .btns {
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.btns_container .confirm_btn {
+    background: var(--primary);
+    border: none;
+    color: var(--button);
+    margin-right: 3rem;
+
+}
+
+.btns_container .btn_cancel {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.message .illusion_update {
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.messageactive .message {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* universal styling ends*/
+
+header {
+    width: 1540px;
+    height: 8vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    -webkit-box-shadow: 0px 3px 16px -5px rgba(7, 84, 156, 1);
+    -moz-box-shadow: 0px 3px 16px -5px rgba(7, 84, 156, 1);
+    box-shadow: 0px 3px 16px -5px rgba(7, 84, 156, 1);
+}
+
+header .logo {
+    width: 50%;
+    height: 100%;
+    /* background-color: gray; */
+}
+
+header .logo img {
+    width: 40%;
+    height: 100%;
+}
+
+header .open_close_btn {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+}
+
+header .open_close_btn i {
+    font-size: 2rem;
+    padding: 1rem;
+    border: 3px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.section_appointment {
+    position: relative;
+    top: 8vh;
+    width: 100%;
+    height: 92vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_appointment .img_container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section_appointment .img_container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 100%;
+    filter: drop-shadow(4px 1px 6px #000);
+}
+
+.section_appointment .form_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+}
+
+.section_appointment .form_container form {
+    width: 60%;
+    height: 80%;
+    background: rgba(233, 245, 255, 0.9);
+    box-shadow: 0 8px 32px 0 rgba(7, 84, 156, 0.37);
+    border-radius: 1rem;
+    border: 1px solid rgba(7, 84, 156, 0.37);
+    flex-direction: column;
+}
+
+.section_appointment .form_container form .input_data_container {
+    width: 100%;
+    height: 90%;
+
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data,
+.right_input_data {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container,
+.right_input_data .label_input_container {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container input,
+.right_input_data .label_input_container input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--secondary);
+    caret-color: var(--text);
+    color: var(--text);
+    background: transparent;
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container input:read-only {
+    background: rgba(233, 245, 255, 0.5);
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container label,
+.right_input_data .label_input_container label {
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container select,
+.right_input_data .label_input_container select {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 1.7rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid var(--secondary);
+    color: var(--text);
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container select option:disabled,
+.right_input_data .label_input_container select option:disabled {
+    display: none;
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container select option:checked,
+.right_input_data .label_input_container select option:checked {
+    background-color: var(--text);
+    color: #fff;
+}
+
+.section_appointment .form_container form .input_data_container .left_input_data .label_input_container select:invalid,
+.right_input_data .label_input_container select:invalid {
+    color: grey;
+}
+
+.section_appointment .form_container form .update {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_appointment .form_container form .update .illusion_update {
+    padding: 1rem;
+    background-color: var(--secondary);
+    font-weight: 400;
+    color: var(--primary);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.section_appointment .form_container form .update .illusion_update:hover {
+    box-shadow: 0 8px 32px 0 rgba(7, 84, 156, 0.37);
+}
+
+/* =================================
+    responsive section ends
+=================================  */
+
+/* =================================
+    responsive section ends
+=================================  */
+@media(max-width: 1548px) {
+    header {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1194px) {
+    header .logo img {
+        width: 50%;
+        height: 100%;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .section_appointment .form_container form {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media(max-width: 768px) {
+    .section_appointment .form_container form {
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px) {
+    .section_appointment {
+        height: 230vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_appointment .img_container {
+        height: 20%;
+    }
+
+    .section_appointment .form_container {
+        width: 100%;
+        height: 80%;
+        top: 20%;
+        background-color: #e9f5ff;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        backdrop-filter: blur(0);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_appointment .form_container form {
+        width: 80%;
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .section_appointment .form_container form .input_data_container {
+        flex-direction: column;
+        height: 95%;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data,
+    .right_input_data {
+        width: 100%;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container input,
+    .right_input_data .label_input_container input {
+        font-size: 1.5rem;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container label,
+    .right_input_data .label_input_container label {
+        font-size: 1.5rem;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container select,
+    .right_input_data .label_input_container select {
+        font-size: 1.5rem;
+    }
+
+    .section_appointment .form_container form .update {
+        height: 5%;
+    }
+
+    .section_appointment .form_container form .update .illusion_update {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media(max-width: 375px) {
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container input,
+    .right_input_data .label_input_container input {
+        font-size: 1.4rem;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container label,
+    .right_input_data .label_input_container label {
+        font-size: 1.4rem;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container select,
+    .right_input_data .label_input_container select {
+        font-size: 1.4rem;
+    }
+
+    .section_appointment .form_container form .update .illusion_update {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(max-width: 320px) {
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container input,
+    .right_input_data .label_input_container input {
+        font-size: 1.2rem;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container label,
+    .right_input_data .label_input_container label {
+        font-size: 1.2rem;
+    }
+
+    .section_appointment .form_container form .input_data_container .left_input_data .label_input_container select,
+    .right_input_data .label_input_container select {
+        font-size: 1.2rem;
+    }
+
+    .section_appointment .form_container form .update .illusion_update {
+        font-size: 1.2rem;
+    }
+
+}

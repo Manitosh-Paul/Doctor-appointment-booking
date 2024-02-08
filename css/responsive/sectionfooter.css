@@ -1,0 +1,105 @@
+@media(max-width: 1226px) {
+    .section_footer .homelinks .home_nav_links ul li {
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 769px) {
+    .section_footer .homelinks .home_nav_links ul li a {
+        font-size: 1.5rem;
+    }
+
+    .section_footer .homelinks .social_links .social_container a {
+        font-size: 1.5rem;
+    }
+
+    .section_footer .homelinks .social_links .social_container i {
+        font-size: 1.9rem;
+    }
+
+    .section_footer .copyright_credits p {
+        font-size: 1.3rem;
+    }
+
+    .section_footer .homelinks .home_nav_links ul li {
+        width: 60%;
+    }
+}
+
+@media(max-width: 563px) {
+    .section_footer .homelinks .home_nav_links ul li {
+        width: 80%;
+    }
+
+    .section_footer .copyright_credits p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media(max-width: 426px) {
+    .section_footer .homelinks .home_nav_links ul li {
+        width: 90%;
+    }
+
+    .section_footer .homelinks .home_nav_links ul li a {
+        font-size: 1.4rem;
+    }
+
+    .section_footer .homelinks .social_links .social_container a {
+        font-size: 1.4rem;
+    }
+
+    .section_footer .homelinks .social_links .social_container i {
+        font-size: 1.7rem;
+    }
+
+    .section_footer .homelinks .social_links {
+        align-items: flex-start;
+        padding-left: 1rem;
+    }
+
+    .section_footer .homelinks .home_nav_links ul {
+        align-items: flex-end;
+        padding-right: 1rem;
+    }
+
+    .section_footer .copyright_credits p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media(max-width: 379px) {
+
+    .section_footer .copyright_credits p {
+        font-size: 0.8rem;
+    }
+
+    .section_footer .homelinks .home_nav_links ul li a {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(max-width: 359px) {
+
+    .section_footer .homelinks .home_nav_links ul li::before {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .section_footer .homelinks .home_nav_links ul li a {
+        font-size: 1.1rem;
+    }
+
+    .section_footer .homelinks .social_links .social_container a {
+        font-size: 1rem;
+    }
+
+    .section_footer .homelinks .social_links .social_container i {
+        font-size: 1.5rem;
+    }
+
+}

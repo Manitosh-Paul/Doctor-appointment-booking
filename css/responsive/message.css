@@ -1,0 +1,60 @@
+@media (max-width:1299px) {
+    .message {
+        width: 40%;
+        height: 15%;
+    }
+
+    .message p {
+        font-size: 1.5rem;
+    }
+
+    .btns_container .btns {
+        font-size: 1.5rem;
+    }
+
+    .message button {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width:862px) {
+    .message {
+        width: 40%;
+        height: 18%;
+    }
+
+    .message p {
+        font-size: 1.3rem;
+    }
+
+    .btns_container .btns {
+        font-size: 1.3rem;
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+@media (max-width:652px) {
+    .message {
+        width: 50%;
+        height: 20%;
+    }
+
+    .message p {
+        line-height: 2.5rem;
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 426px) {
+    .message {
+        width: 70%;
+    }
+
+    .btns_container .btns {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,234 @@
+:root {
+    --primary: #e9f5ff;
+    --secondary: #07549c;
+    --button: #7fc3f5;
+    --text: #0984e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* scroll bar design */
+
+html::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* scroll bar design ends*/
+
+.p-top {
+    padding-top: 10vh;
+}
+
+.p-left {
+    padding-left: 10%;
+}
+
+.p-right {
+    padding-right: 10%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* universal styling ends*/
+
+.emergencycontainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+
+
+.emergencycontainer .logo_container {
+    width: 20%;
+    height: 10vh;
+    position: absolute;
+    z-index: 100;
+}
+
+.emergencycontainer .logo_container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.emergencycontainer .cancelbtn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 100;
+}
+
+.emergencycontainer .cancelbtn a {
+    border: 3px solid var(--secondary);
+    display: inline-block;
+}
+
+.emergencycontainer .cancelbtn a i {
+    font-size: 3rem;
+    padding: 0.5rem
+}
+
+.emergencycontainer .sq_polygon {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--primary);
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.emergencycontainer .sq_polygon .emergency_form {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+    border-radius: 1rem;
+    background-color: #fff;
+    -webkit-box-shadow: -1px 1px 30px -3px rgba(7, 84, 156, 1);
+    -moz-box-shadow: -1px 1px 30px -3px rgba(7, 84, 156, 1);
+    box-shadow: -1px 1px 30px -3px rgba(7, 84, 156, 1);
+}
+
+.emergencycontainer .sq_polygon .emergency_form .label_input_container {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.emergencycontainer .sq_polygon .emergency_form .label_input_container input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--secondary);
+    caret-color: var(--text);
+    color: var(--text);
+}
+
+.emergencycontainer .sq_polygon .emergency_form .label_input_container label {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.emergencycontainer .sq_polygon .emergency_form .label_input_container select {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--secondary);
+    color: var(--text);
+    overflow-y: scroll;
+}
+
+.emergencycontainer .sq_polygon .emergency_form .label_input_container select option:disabled {
+    display: none;
+}
+
+.emergencycontainer .sq_polygon .emergency_form .label_input_container select option:checked {
+    background-color: var(--text);
+    color: #fff;
+}
+
+.emergencycontainer .sq_polygon .emergency_form .label_input_container select:invalid {
+    color: grey;
+}
+
+.emergencycontainer .sq_polygon .emergency_form .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emergencycontainer .sq_polygon .emergency_form .submit button {
+    padding: 1rem;
+    background-color: var(--secondary);
+    font-weight: 400;
+    color: var(--primary);
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.emergencycontainer .sq_polygon .emergency_form .submit button:hover {
+    box-shadow: 0 8px 32px 0 rgba(7, 84, 156, 0.37);
+    transform: scale(1.1);
+}
+
+
+.emergencycontainer .emergency_illustration {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.emergencycontainer .emergency_illustration .graph {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.emergencycontainer .emergency_illustration .emergency_img {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(4px 1px 6px #000);
+}

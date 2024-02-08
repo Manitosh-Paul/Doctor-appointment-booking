@@ -1,0 +1,86 @@
+@media(max-width: 2560px) {
+    .section_services {
+        height: 70vh;
+    }
+
+    .section_services .services_container {
+        width: 90%;
+        height: 60vh;
+    }
+}
+
+@media(max-width: 2000px) {
+    .section_services {
+        height: 100vh;
+    }
+
+    .section_services .services_container {
+        height: 90vh;
+    }
+}
+
+@media(max-width: 1357px) {
+    .section_services {
+        height: 75vh;
+    }
+
+    .section_services .services_container {
+        height: 65vh;
+    }
+
+    .section_services .services_container .service_item {
+        min-width: 20rem;
+        height: 18rem;
+    }
+
+    .section_services .services_container .service_item a .service_caption h3 {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media(max-width: 899px) {
+    .section_services {
+        height: 50vh;
+    }
+
+    .section_services .services_container {
+        width: 85%;
+        height: 35vh;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-align: start;
+        border-left: 3px solid #fff;
+    }
+
+    .section_services .services_container::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .section_services .service_heading h2 {
+        font-size: 2.8rem;
+    }
+
+    .section_services .services_container .service_item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .section_services .services_container .service_item a .service_caption h3 {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .section_services .service_heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .section_services .services_container .service_item a .service_caption h3 {
+        font-size: 1.3rem;
+    }
+}

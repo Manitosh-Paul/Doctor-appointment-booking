@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>My First JavaScript</h1>
+
+    <button type="button" onclick="setDateTime()">
+        Click and see Date and Time.</button>
+
+    <input value="mani" id="date_button"></input>
+    <input value="paul" id="time_button"></input>
+
+    <script>
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        const dt = document.getElementById('date_button');
+        const tt = document.getElementById('time_button');
+        function setDateTime() {
+            dt.value = date;
+            tt.value = time;
+        }
+    </script>
+</body>
+
+</html>
